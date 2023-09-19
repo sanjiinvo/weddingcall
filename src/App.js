@@ -10,7 +10,7 @@ import menstyle from './img/menstyle.png'
 import womenstyle from './img/womenstyle.png'
 
 function App() {
-  const [convOpen, setconvOpen] = useState(false)
+  const [convOpen, setconvOpen] = useState(true)
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
   function calculateTimeRemaining() {
     const deadline = new Date('2023-10-22');
@@ -63,22 +63,22 @@ function App() {
       <audio className='' autoPlay loop>
       <source src='./audio/mus.mp3'/>
       </audio>
-      <div className= {`left-wing wings ${convOpen? 'left-wing-open': ''}`} >
+      {/* <div className= {`left-wing wings ${convOpen? 'left-wing-open': ''}`} >
         <div  className='heart-left' onClick={openWings}>
           <p className='heart-title'>click me</p>
         </div>
-      </div>
-      <div className={`right-wing wings ${convOpen? 'right-wing-open': ''}`}>
+      </div> */}
+      {/* <div className={`right-wing wings ${convOpen? 'right-wing-open': ''}`}>
 
-      </div>
+      </div> */}
 
       <div className='conv-shape'>
       <div className={`${convOpen? 'first-block':'hidden'}`}>
           <div className='first-titles'>
-            <p style={{color:'pink'}} className='first-block-title'>
+            <p style={{color:'goldenrod'}} className='first-block-title'>
             Камила
             </p>
-            <p style={{color:'pink'}} className='first-block-title-2'>
+            <p style={{color:'goldenrod'}} className='first-block-title-2'>
             Қыз Ұзату
             </p>
           </div>
@@ -86,7 +86,7 @@ function App() {
       <div className={`${convOpen? 'second-block' : 'hidden'}`}>
       <div className='sexond-block-text-block'>
         <p className='second-block-first-title'>
-          Құрметті ағайын-туыс, буырлар, құда-жекжат, нағашылар, дос-жарандар, көршілер және әріптестер!
+          Құрметті ағайын-туыс, бауырлар, құда-жекжат, нағашылар, дос-жарандар, көршілер және әріптестер!
         </p>
         <p className='second-block-second-title'>
           СІЗДЕРДІ АЯУЛЫ ҚЫЗЫМЫЗ
@@ -102,8 +102,10 @@ function App() {
       </div>
       <div className={`${convOpen? 'third-block' : 'hidden'}`}> 
       <div className='third-block-title'>
+        <p className='third-block-main-title'>
+          Той салтанаты: 
+        </p>
         <p className='third-block-date'>
-          Той салтанаты: <br/>
           2023 жылдың 22 қазан күні сағат 14:00-де басталады.
         </p>
       </div>
@@ -189,10 +191,10 @@ function App() {
 
           <div className='toy-ueleri'>
             <p className='ueleri-title'>
-              ТОЙ ИЕЛЕРІ:
+              Той иесі:
             </p>
             <p className='ueleri-name'>
-            Саулегуль
+               Саулегуль
             </p>
           </div>
       </div>
