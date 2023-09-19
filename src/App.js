@@ -50,7 +50,13 @@ function App() {
   const openWings = () =>{
     setconvOpen(!convOpen)
     const audio = new Audio(mus)
-    audio.play()
+    // audio.play()
+    // setTimeout(()=>{
+    //    let left = document.getElementById('left-wing')
+    //    left.classList.add('void')
+    //    let right = document.getElementById('right-wing')
+    //    right.classList.add('void')
+    // },2000)
   }
 
  useEffect(()=>{
@@ -60,19 +66,17 @@ function App() {
 
   return (
     <div className="App">
-      <audio className='' autoPlay loop>
-      <source src='./audio/mus.mp3'/>
-      </audio>
-      <div className= {`left-wing wings ${convOpen? 'left-wing-open': ''}`} >
-        <div  className='heart-left' onClick={openWings}>
-          <p className='heart-title'>open</p>
-        </div>
-      </div>
-      <div className={`right-wing wings ${convOpen? 'right-wing-open': ''}`}>
 
-      </div>
 
       <div className='conv-shape'>
+      <div id='left-wing' className= {`left-wing wings ${!convOpen? 'left-wing-open': ''}`} >
+        <div  className='heart-left' onClick={openWings}>
+          <p className='heart-title'>open me</p>
+        </div>
+      </div>
+      <div id='right-wing' className={`right-wing wings ${!convOpen? 'right-wing-open': ''}`}>
+
+      </div>
       <div className={`${convOpen? 'first-block':'hidden'}`}>
           <div className='first-titles'>
             <p style={{color:'goldenrod'}} className='first-block-title'>
