@@ -172,7 +172,7 @@ function App() {
       </div>
 
       </div>
-      <div className='fourth-block'>
+      <div className={`${convOpen? 'fourth-block':'hidden'}`}>
         <div>
         <p className='fourth-block-title'>
           Мекен-Жайымыз
@@ -196,7 +196,7 @@ function App() {
             </p>
           </div>
       </div>
-      <div className='fives-block'>
+      <div className={`${convOpen? 'fives-block':'hidden'}`}>
         <div className='drees-code'>
           <p className='dress-code-title'>ДРЕСС КОД:</p>
           <div className='dress-code-styles'>
