@@ -2,45 +2,87 @@
     margin: 0;
     padding: 0;
 }
+$greenyfont: goldenrod;
+// #77a87a
 @import './fonts/alexander/alexander.css';
 @font-face {
     font-family: 'Kazakh';
     src: url('./fonts/KZBalmoral/kzbalmoral_regular.ttf') format(truetype);
 }
 $conv: 100%;
-body{
-    margin: auto;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
+body{
+
+}
+
 .App{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
+    
 
-.title-well{
+.second-block{
+    height: 100vh;
+    background-image: url(./img/3rdblockflow.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+}
+.sexond-block-text-block{
+    margin: auto;
+    margin-top: 10vh;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    
+}
+.second-block-first-title{
+    margin-top: 14vh;
+    width: 80%;
+    font-family: Kazakh;
+    font-size: 45px;
+    color: $greenyfont;
 
+}
+.second-block-third-title{
+    font-family: Kazakh;
+    font-size: 80px;
+    color: goldenrod;
+}
+.second-block-second-title{
+    font-size: 25px;
+    color: $greenyfont;
+
+}
+.second-block-fourth-title{
+    font-size: 20px;
+    color: $greenyfont;
 }
 .conv-shape{
     width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    background-color: #ffffff;
-    display: flex;
-    background-image: url(./img/bg2.png),url(./img/bg1.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: left top, right top;
-    background-size: 83%, 40%;
-    background-color: rgba($color: #ffffff, $alpha: 0.7);
-    background-attachment: fixed;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    background-image: url(./img/bg2.png),url(./img/bg1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    // background-size: 83%, 40%;
+    background-color: rgba($color: #ffffff, $alpha: 0.7);
+    background-attachment: fixed, fixed;
 
 }
 .first-titles{
@@ -61,11 +103,154 @@ body{
     color: #a3dda6;
 }
 .first-block{
-    height: 100%;
+    height: 100vh;
  background-image: url(./img/nevesta.png);
  background-position: bottom center;
  background-repeat: no-repeat;
  background-size: 100%;
+}
+.third-block{
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.third-block-date{
+    color: $greenyfont;
+    text-align: center;
+    font-size: 30px;
+}
+ul{
+    list-style-type: none;
+}
+.calendar{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 30vh;
+    margin-bottom: 10vh;
+}
+.calendar-title{
+    text-align: center;
+    font-size: 35px;
+    color: $greenyfont;
+    margin-bottom: 2vh;
+}
+.dayactive{
+    font-weight: 600;
+    color: red;
+}
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-top: 2vh;
+    align-items: baseline;
+    
+    li{
+        text-align: center;
+        width: 14%;
+        font-family: Kazakh;
+        font-size: 45px;
+    }
+}
+.weekdays{
+    display: flex;
+    justify-content: space-between;
+    li{
+        text-align: center;
+        width: 14%;
+        font-size: 20px;
+        font-family: cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+.hidden{
+    height: 0;
+
+}
+.timer{
+    margin-top: 5vh;
+    height: 15vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    .timer__items{
+        border: 2px solid black;
+        background-color: #fff;
+        border-radius: 16px;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        .timer__item{
+            background: $greenyfont;
+            color: white;
+            padding: 2vh 2vw;
+            border-radius: 30%;
+
+        }
+    }
+}
+.fives-block{
+    width: 100%;
+}
+.dress-code-title{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.gis-icon{
+    width: 170px;
+    height: 100px;
+}
+.toy-ueleri{
+    height: 100%;
+    width: 100%;
+    background-image: url(./img/ueler4.png);
+    background-repeat: no-repeat,;
+    background-size: contain;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ueleri-title{
+    color: $greenyfont;
+    font-size: 30px;
+    margin-bottom: 2vh;
+}
+.ueleri-name{
+    margin-top: 2vh;
+    color: $greenyfont;
+    font-size: 35px;
+}
+.fourth-block{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fourth-block-title{
+    color: $greenyfont;
+    text-transform: capitalize;
+    font-family: Kazakh;
+    font-size: 90px;
+}
+.addresofwed{
+    text-align: center;
+    color: $greenyfont;
+    font-size: 27px;
 }
 .title{
     display: flex;
