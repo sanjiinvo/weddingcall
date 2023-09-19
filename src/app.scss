@@ -10,6 +10,10 @@ $greenyfont: #ff0085;
     font-family: 'Kazakh';
     src: url('./fonts/KZBalmoral/kzbalmoral_regular.ttf') format(truetype);
 }
+
+@font-face{
+font-family: 'Saulegul';
+src: url(./fonts/MonplesirScript/Monplesirscript.ttf) format(truetype);}
 $conv: 100%;
 html, body {
     height: 100%;
@@ -53,7 +57,7 @@ body{
 }
 .second-block-first-title{
     margin-top: 5vh;
-    width: 80%;
+    width: 100%;
     font-family: Kazakh;
     font-size: 45px;
     color: $greenyfont;
@@ -70,8 +74,10 @@ body{
 
 }
 .second-block-fourth-title{
+    margin-top: -5vh;
     font-size: 25px;
     color: $greenyfont;
+    margin-bottom: 2vh;
 }
 .conv-shape{
     width: 100vw;
@@ -89,7 +95,7 @@ body{
 
 }
 .first-titles{
-    margin-top: 18vh;
+    margin-top: 20vh;
     margin-left: 15vw;
     display: flex;
     flex-direction: column;
@@ -99,11 +105,11 @@ body{
 .first-block-title{
     color: rgb(68, 68, 196);
     font-family:kazakh;
-    font-size: 75px;
+    font-size: 70px;
 }
 .first-block-title-2{
     font-family:kazakh;
-    font-size: 75px;
+    font-size: 70px;
     color: #a3dda6;
 }
 .first-block{
@@ -111,7 +117,7 @@ body{
     background-image: url(./img/nevesta.png);
     background-position: bottom center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 90%;
 }
 .third-block{
     // height: 100vh;
@@ -193,7 +199,7 @@ ul{
 
 }
 .timer{
-    margin-top: 10vh;
+    margin-top: 18vh;
     height: 15vh;
     width: 90%;
     display: flex;
@@ -218,15 +224,16 @@ ul{
     }
 }
 .fives-block{
-    margin-top: -5vh;
+    margin-top: -10vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10vh;
 }
 .drees-code{
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,7 +243,8 @@ ul{
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
-    color: $greenyfont;
+    color: goldenrod;
+    font-weight: 600;
 }
 .style-descr{
     display: flex;
@@ -256,10 +264,12 @@ ul{
     height: 25vw;
 }
 .gis-icon{
+    margin-top: -10vh;
     width: 170px;
     height: 100px;
 }
 .toy-ueleri{
+    margin-top: -10vh;
     // height: 100%;
     // background-image: url(./img/ueler4.png);
     // background-repeat: no-repeat,;
@@ -271,12 +281,14 @@ ul{
 }
 .ueleri-title{
     color: $greenyfont;
+    font-family: Saulegul;
     font-size: 35px;
     // margin-bottom: 2vh;
 }
 .ueleri-name{
     // margin-top: 2vh;
     color: $greenyfont;
+    font-family: Saulegul;
     font-size: 35px;
 }
 .fourth-block{
@@ -288,16 +300,20 @@ ul{
     justify-content: space-evenly;
 }
 .fourth-block-title{
-    margin-top: 5vh;
-    color: $greenyfont;
-    text-transform: capitalize;
-    font-family: Kazakh;
-    font-size: 90px;
+    // margin-top: 5vh;
+    color: goldenrod;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5vh;
+    // font-family: Kazakh;
+    // font-size: 90px;
 }
 .addresofwed{
+    font-family: Kazakh;
     text-align: center;
     color: $greenyfont;
-    font-size: 27px;
+    font-size: 55px;
 }
 .title{
     display: flex;

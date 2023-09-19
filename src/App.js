@@ -10,13 +10,13 @@ import menstyle from './img/menstyle.png'
 import womenstyle from './img/womenstyle.png'
 
 function App() {
-  const [convOpen, setconvOpen] = useState(true)
+  const [convOpen, setconvOpen] = useState(false)
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
   function calculateTimeRemaining() {
-    const deadline = new Date('2023-10-22');
+    const deadline = new Date('2023-10-22 14:00');
     const currentTime = new Date();
     const timeDifference = deadline - currentTime;
-
+    // console.log(currentTime);
     if (timeDifference <= 0) {
       return {
         days: 0,
@@ -50,7 +50,7 @@ function App() {
   const openWings = () =>{
     setconvOpen(!convOpen)
     const audio = new Audio(mus)
-    // audio.play()
+    audio.play()
   }
 
  useEffect(()=>{
@@ -63,14 +63,14 @@ function App() {
       <audio className='' autoPlay loop>
       <source src='./audio/mus.mp3'/>
       </audio>
-      {/* <div className= {`left-wing wings ${convOpen? 'left-wing-open': ''}`} >
+      <div className= {`left-wing wings ${convOpen? 'left-wing-open': ''}`} >
         <div  className='heart-left' onClick={openWings}>
-          <p className='heart-title'>click me</p>
+          <p className='heart-title'>open</p>
         </div>
-      </div> */}
-      {/* <div className={`right-wing wings ${convOpen? 'right-wing-open': ''}`}>
+      </div>
+      <div className={`right-wing wings ${convOpen? 'right-wing-open': ''}`}>
 
-      </div> */}
+      </div>
 
       <div className='conv-shape'>
       <div className={`${convOpen? 'first-block':'hidden'}`}>
@@ -124,12 +124,12 @@ function App() {
         <li>ЖБ</li>
       </ul>
       <ul class="days">  
-          <li>25</li>
-          <li>26</li>
-          <li>27</li>
-          <li>28</li>
-          <li>29</li>
-          <li>30</li>
+          <li style={{color:'lightgray'}}>25</li>
+          <li style={{color:'lightgrey'}}>26</li>
+          <li style={{color:'lightgrey'}}>27</li>
+          <li style={{color:'lightgrey'}}>28</li>
+          <li style={{color:'lightgrey'}}>29</li>
+          <li style={{color:'lightgrey'}}>30</li>
           <li>1</li>
           <li>2</li>
           <li>3</li>
@@ -166,8 +166,8 @@ function App() {
       </div>
             <div class="timer">
               <div class="timer__items">
-                <div class="timer__item timer__days">{timeRemaining.days}<br/> дней</div>
-                <div class="timer__item timer__hours">{timeRemaining.hours}<br/>  часов</div>
+                <div class="timer__item timer__days">{timeRemaining.days}<br/> күн</div>
+                <div class="timer__item timer__hours">{timeRemaining.hours}<br/>  сағат</div>
                 <div class="timer__item timer__minutes">{timeRemaining.minutes}<br/>  минут</div>
                 <div class="timer__item timer__seconds">{timeRemaining.seconds}<br/>  секунд</div>
               </div>
@@ -177,7 +177,7 @@ function App() {
       <div className={`${convOpen? 'fourth-block':'hidden'}`}>
         <div>
         <p className='fourth-block-title'>
-          Мекен-Жайымыз
+          Мекен-жайымыз:
         </p>
         <p className='addresofwed'>
           Астана қаласы, <br/>
@@ -191,7 +191,7 @@ function App() {
 
           <div className='toy-ueleri'>
             <p className='ueleri-title'>
-              Той иесі:
+              Той иесi:
             </p>
             <p className='ueleri-name'>
                Саулегуль
