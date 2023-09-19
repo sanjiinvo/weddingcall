@@ -75,10 +75,10 @@ function App() {
       <div className='conv-shape'>
       <div className={`${convOpen? 'first-block':'hidden'}`}>
           <div className='first-titles'>
-            <p className='first-block-title'>
+            <p style={{color:'pink'}} className='first-block-title'>
             Камила
             </p>
-            <p className='first-block-title-2'>
+            <p style={{color:'pink'}} className='first-block-title-2'>
             Қыз Ұзату
             </p>
           </div>
@@ -108,7 +108,7 @@ function App() {
         </p>
       </div>
       <div className='calendar'>
-      <p className='calendar-title'>
+      <p style={{color:'goldenrod'}} className='calendar-title'>
         Қазан
       </p>
       <div className='dates'>

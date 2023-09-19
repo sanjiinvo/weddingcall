@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
 }
-$greenyfont: goldenrod;
+$greenyfont: pink;
+// goldenrod
 // #77a87a
 @import './fonts/alexander/alexander.css';
 @font-face {
@@ -182,7 +183,7 @@ ul{
     display: flex;
     justify-content: center;
     .timer__items{
-        border: 2px solid black;
+        border: 2px solid pink;
         background-color: #fff;
         border-radius: 16px;
         display: flex;
