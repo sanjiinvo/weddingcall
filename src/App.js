@@ -6,6 +6,9 @@ import { CaretUpFill } from "react-bootstrap-icons";
 import toporn from './img/toporn.jpg'
 import tgis from './img/2gisl.png'
 import mus from './audio/mus.mp3'
+import menstyle from './img/menstyle.png'
+import womenstyle from './img/womenstyle.png'
+
 function App() {
   const [convOpen, setconvOpen] = useState(false)
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
@@ -197,12 +200,16 @@ function App() {
         <div className='drees-code'>
           <p className='dress-code-title'>ДРЕСС КОД:</p>
           <div className='dress-code-styles'>
-            <div className='men-style'>
-            
+            <div className='style-descr'>
+            <img src={menstyle} alt='men' className='men-style dress-style'/>
+            <p>Ерлер қауымы:<br/>Классикалық <br/>костюм</p>
             </div>
-            <div className='women-style'>
+            <div className='style-descr'>
+            <img src={womenstyle} alt='women' className='women-style dress-style'/>
+            <p>Әйелдер қауымы:<br/>Кешкі койлек</p>
 
             </div>
+
 
           </div>
 
