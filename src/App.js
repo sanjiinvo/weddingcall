@@ -50,7 +50,7 @@ function App() {
   const openWings = () =>{
     setconvOpen(!convOpen)
     const audio = new Audio(mus)
-    // audio.play()
+    audio.play()
     // setTimeout(()=>{
     //    let left = document.getElementById('left-wing')
     //    left.classList.add('void')
